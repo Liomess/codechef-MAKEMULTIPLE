@@ -1,0 +1,13 @@
+for i in range(int(input())):
+    s=input()
+    l1=s.split()
+    l=list(map(lambda x:int(x),l1))
+    a,b=l[0],l[1]
+    if b%a==0:
+        print("yes")
+    elif a>b//2:
+        print("no")
+    elif (b-a)>=a:
+        print("yes")
+    else:
+        print("no")
